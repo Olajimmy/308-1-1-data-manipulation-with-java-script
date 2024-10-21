@@ -85,7 +85,10 @@ console.log('Total fuel cost at 75 mph = $', fuel_amount3);
 
 //checking the budget
 let fuel_budget = 175;
-console.log("Will your budget be enough to cover your fuel expenses?", (fuel_budget >= fuel_amount1));
+console.log("Will your budget be enough to cover your fuel expenses at 55mph?", (fuel_budget >= fuel_amount1));
+console.log("Will your budget be enough to cover your fuel expenses at 60mph?", (fuel_budget >= fuel_amount2));
+console.log("Will your budget be enough to cover your fuel expenses at 75mph?", (fuel_budget >= fuel_amount3));
+
 
 
 
