@@ -39,8 +39,54 @@ console.log(multi);
 result= multi % n4;
 console.log(result);
 
+
+
+//confirm before submitting
 console.log("change isOver25 how it calculates so we dont have to use ! operator")
 //change isOver25 how it calculates so we dont have to use ! operator
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
 console.log("is not over 25",isOver25)
+
+//question 2
+console.log("======================Question 2==================== ")
+console.log("how many gallons of fuel needed for the entire trip");
+
+const distance = 1500;
+let mpg = 30;
+//gallons needed for the entire trip at 55mph
+let gal_needed_55 = distance / mpg;
+console.log('At 55mph, the amount of gallons needed =:', gal_needed_55);
+//gallons needed at 60mph
+ mpg = 28;
+let gal_needed_60 = distance / mpg;
+
+console.log('At 60mph, the amount of gallons needed =:',gal_needed_60)
+
+//gallons needed at 75mph
+mpg = 23;
+let gal_needed_75 = distance / mpg;
+console.log('At 75mph, the amount of gallons needed =:',gal_needed_75)
+
+//will your budget be enough to cover the full expense?
+//at 55mph
+const cost_per_gal = 3;
+let fuel_amount1 = cost_per_gal * gal_needed_55;
+console.log('Total fuel cost at 55 mph = $', fuel_amount1);
+
+//at 60mph
+let fuel_amount2 = cost_per_gal * gal_needed_60;
+console.log('Total fuel cost at 60 mph = $', fuel_amount2);
+
+
+//at 75 mph
+let fuel_amount3 = cost_per_gal * gal_needed_75;
+console.log('Total fuel cost at 75 mph = $', fuel_amount3);
+
+
+//checking the budget
+let fuel_budget = 175;
+console.log("Will your budget be enough to cover your fuel expenses?", (fuel_budget >= fuel_amount1));
+
+
+
 
