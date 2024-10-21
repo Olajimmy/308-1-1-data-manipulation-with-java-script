@@ -90,6 +90,21 @@ console.log("Will your budget be enough to cover your fuel expenses at 60mph?", 
 console.log("Will your budget be enough to cover your fuel expenses at 75mph?", (fuel_budget >= fuel_amount3));
 
 
+// trip duration
+console.log('How long will the trip take in hours');
+let mph1 = 55;
+let mph2 = 60;
+let mph3 = 75;
+let duration = distance / mph1;
+console.log('At 55mph, it will take',duration + " "+" to get to our destination");
+duration = distance / mph2;
+console.log('At 60mph, it will take',duration + " "+" to get to our destination");
+duration = distance / mph3;
+console.log('At 75mph, it will take',duration + " "+ " to get to our destination");
+
+
+
+
 
 
 
