@@ -52,19 +52,19 @@ console.log("======================Question 2==================== ")
 console.log("how many gallons of fuel needed for the entire trip");
 
 const distance = 1500;
-let mpg = 30;
+let mpg1 = 30;
 //gallons needed for the entire trip at 55mph
-let gal_needed_55 = distance / mpg;
+let gal_needed_55 = distance / mpg1;
 console.log('At 55mph, the amount of gallons needed =:', gal_needed_55);
 //gallons needed at 60mph
- mpg = 28;
-let gal_needed_60 = distance / mpg;
+ let mpg2 = 28;
+let gal_needed_60 = distance / mpg2;
 
 console.log('At 60mph, the amount of gallons needed =:',gal_needed_60)
 
 //gallons needed at 75mph
-mpg = 23;
-let gal_needed_75 = distance / mpg;
+let mpg3 = 23;
+let gal_needed_75 = distance / mpg3;
 console.log('At 75mph, the amount of gallons needed =:',gal_needed_75)
 
 //will your budget be enough to cover the full expense?
@@ -95,14 +95,33 @@ console.log('How long will the trip take in hours');
 let mph1 = 55;
 let mph2 = 60;
 let mph3 = 75;
-let duration = distance / mph1;
-console.log('At 55mph, it will take',duration + " "+" to get to our destination");
-duration = distance / mph2;
-console.log('At 60mph, it will take',duration + " "+" to get to our destination");
-duration = distance / mph3;
-console.log('At 75mph, it will take',duration + " "+ " to get to our destination");
+let duration2;
+let duration3;
+let duration1 = distance / mph1;
+console.log('At 55mph, it will take',duration1 + " "+"hours to get to our destination");
+duration2 = distance / mph2;
+console.log('At 60mph, it will take',duration2 + " "+"hours to get to our destination");
+duration3 = distance / mph3;
+console.log('At 75mph, it will take',duration3 + " "+ "hours to get to our destination");
 
+//result comparison
+if (fuel_amount1<fuel_amount2 && fuel_amount1 < fuel_amount3){
+    let cheap =fuel_amount1
+    console.log("the cheapest amount for the trip is:", fuel_amount1)
+}else if(fuel_amount2 <fuel_amount1 && fuel_amount2 < fuel_amount3) {
+    cheap=fuel_amount2
+    console.log("the cheapest amount for the trip is:", fuel_amount2)
 
+}else{
+    cheap = fuel_amount3;
+    console.log("the cheapest amount for the trip is:", fuel_amount3)
+
+}
+
+//cheap = ( fuel_amount1 < fuel_amount2 && fuel_amount1 < fuel_amount3);
+ //console.log("the cheapest budget is:",) ;
+   // console.log(fuel_amount1 + `makes more sense because it uses" ${mpg1} miles "per gallons` );
+   // console.log(duration2, duration3 + "are more than", duration1);
 
 
 
