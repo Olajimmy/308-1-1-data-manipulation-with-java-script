@@ -44,8 +44,8 @@ console.log(result);
 //confirm before submitting
 console.log("change isOver25 how it calculates so we dont have to use ! operator")
 //change isOver25 how it calculates so we dont have to use ! operator
-const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
-console.log("is not over 25",isOver25)
+const isNotOver25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
+console.log("is not over 25",isNotOver25)
 
 //question 2
 console.log("======================Question 2==================== ")
@@ -107,14 +107,14 @@ console.log('At 75mph, it will take',duration3 + " "+ "hours to get to our desti
 //result comparison
 if (fuel_amount1<fuel_amount2 && fuel_amount1 < fuel_amount3){
     let cheap =fuel_amount1
-    console.log("the cheapest amount for the trip is:", fuel_amount1)
+    console.log("the cheapest amount for the trip is:", fuel_amount1,  " which i think is better than", fuel_amount2, 'and', fuel_amount3)
 }else if(fuel_amount2 <fuel_amount1 && fuel_amount2 < fuel_amount3) {
     cheap=fuel_amount2
     console.log("the cheapest amount for the trip is:", fuel_amount2)
 
 }else{
     cheap = fuel_amount3;
-    console.log("the cheapest amount for the trip is:", fuel_amount3)
+    console.log("the cheapest amount for gas for the trip is:", fuel_amount3 )
 
 }
 
